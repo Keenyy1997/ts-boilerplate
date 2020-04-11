@@ -39,7 +39,7 @@ class Server {
 
     this.app.listen(this.port, () => {
       console.log(
-        `Express App Listening at: ${this.port}`
+        `Express App Listening at: ${process.env.BASE_URL || "http://localhost:"}${this.port}`
       )
     })
 
