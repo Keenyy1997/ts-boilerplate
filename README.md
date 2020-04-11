@@ -5,7 +5,7 @@
 - [`Express`](https://github.com/Keenyy1997/ts-boilerplate/tree/express)
 - [`Express + Docker`](https://github.com/Keenyy1997/ts-boilerplate/tree/express-docker)
 - [`GraphQL`](https://github.com/Keenyy1997/ts-boilerplate/tree/graphql)
-- `GraphQL + Docker` *In Process*
+- [`GraphQL + Docker`](https://github.com/Keenyy1997/ts-boilerplate/tree/graphql-docker)
 - `Express + GraphQL` *In Process*
 - `Express + GraphQL + Docker` *In Process*
 
