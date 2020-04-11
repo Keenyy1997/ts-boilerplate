@@ -1,7 +1,7 @@
 {
   "name": "typescript-boilerplate",
   "version": "1.0.0",
-  "description": "Typescript + GraphQL + Eslint Boilerplate",
+  "description": "Typescript + GraphQL + Docker + Eslint Boilerplate",
   "main": "build/index.js",
   "scripts": {
     "start:dev": "nodemon",
