@@ -2,11 +2,12 @@
   "compilerOptions": {
     "target": "es6",     
     "module": "commonjs",
-    "lib": ["ES6"],
+    "lib": ["ES6", "DOM"],
     "allowJs": true,
     "outDir": "build",        
     "rootDir": "src",               
     "strict": true,
+    "removeComments": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "noImplicitAny": true

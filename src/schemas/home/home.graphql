@@ -1,0 +1,6 @@
+
+# Example type to fetch a home
+type Home {
+  address: String!
+  owner: String!
+}

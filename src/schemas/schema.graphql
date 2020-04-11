@@ -1,0 +1,10 @@
+# import Home from 'home/home.graphql'
+
+type Query {
+  getRandomHome: Home
+}
+
+# >>> DESCRIPTION
+# Index.graphql will be the only file that we are going to `import`
+# Using the library `graphql-import` we can import inside the `.graphql` files another `.graphql` files as:
+# ex: # import TypeExample from 'example/file.graphql'
