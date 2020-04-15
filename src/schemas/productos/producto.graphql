@@ -1,0 +1,16 @@
+
+type Producto {
+    id: ID!
+    nombre: String!
+    precio: Float!
+    unidades: Int!
+    proveedor: Proveedor
+}
+
+
+input productoInput {
+    nombre: String!
+    precio: Float!
+    unidades: Int = 1
+    proveedorId: ID!
+}

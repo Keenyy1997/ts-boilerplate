@@ -1,7 +1,30 @@
-# import Home from 'home/home.graphql'
+# import Producto, productoInput from './productos/producto.graphql'
+# import Proveedor, proveedorInput from './proveedores/proveedor.graphql'
 
 type Query {
-  getRandomHome: Home
+    # PRODUCTOS (O EN CASO DE QUE SE LE PASE EL ID, SE FILTRARIA POR EL PRODUCTO)
+    productos(id: Int): [Producto]
+
+    # PROVEEDORES (O EN CASO DE QUE SE LE PASE EL ID, SE FILTRARIA POR EL ID DEL PROVEEDOR)
+    proveedores(id: Int): [Proveedor]
+}
+
+type Mutation {
+    # PRODUCTOS
+    # 1) INSERT
+    # 2) UPDATE
+    # 3) DELETE
+    addProducto(data: productoInput): Producto
+    updateProducto(id: Int!, data: productoInput): Producto
+    deleteProducto(id: Int!): String
+
+    # PROVEEDORES
+    # 1) INSERT
+    # 2) UPDATE
+    # 3) DELETE
+    addProveedor(data: proveedorInput): Proveedor
+    updateProveedor(id: Int!, data: proveedorInput): Proveedor
+    deleteProveedor(id: Int!): String
 }
 
 # >>> DESCRIPTION

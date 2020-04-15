@@ -1,0 +1,11 @@
+type Proveedor {
+    id: ID!
+    nombre: String!
+    email: String!
+    productos: [Producto]
+}
+
+input proveedorInput {
+    nombre: String!
+    email: String!
+}

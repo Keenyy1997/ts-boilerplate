@@ -1,5 +1,7 @@
 import { IResolvers  } from 'apollo-server';
-import { getRandomHome } from './query/home';
+/* IMPORTAMOS LOS RESOLVERS */
+import { productos, findProveedor, addProducto, updateProducto, deleteProducto } from './productos'
+import { proveedores, findProductos, addProveedor, updateProveedor, deleteProveedor } from './proveedores'
 
 // Our resolver(general) needs to be an object
 
@@ -10,7 +12,25 @@ export function loadResolvers(): IResolvers {
 
   return {
     Query: {
-      getRandomHome
+      productos,
+      proveedores
+    },
+    Mutation: {
+      // PRODUCTOS
+      addProducto,
+      updateProducto,
+      deleteProducto,
+      // PROVEEDORES
+      addProveedor,
+      updateProveedor,
+      deleteProveedor
+    },
+    // Resolvers en base a types
+    Producto: {
+      proveedor: findProveedor
+    },
+    Proveedor: {
+      productos: findProductos
     }
   }
 }
